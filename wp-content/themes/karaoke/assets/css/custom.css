@@ -47,14 +47,16 @@
   padding-top: 30px;
   text-align: center;
 }
+.widget-area section {
+  background: #fff;
+}
 .widget-area section .widget-title {
   padding: 15px 10px;
-  text-transform: uppercase;
-  font-family: arial;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 18px;
   border-top: 3px solid #811000;
   background: #C1C1C1;
+  font-weight: 400;
+  color: #555;
 }
 .widget-area section ul {
   margin-left: 0;
@@ -73,4 +75,75 @@
 }
 .widget-area .widget_recent_entries ul li:first-child {
   padding: 0;
+}
+.site-main article {
+  background: #fff;
+}
+.site-main article .entry-title {
+  font-size: 29px;
+  padding: 20px 15px;
+}
+.site-main article .entry-title a {
+  color: #000;
+  font-weight: normal;
+}
+.site-main article .entry-title a:hover {
+  text-decoration: none;
+  color: #811000;
+}
+.site-main article .entry-content {
+  padding-bottom: 20px;
+}
+.site-main article .entry-footer {
+  background-color: #f9f9f9;
+  padding: 20px 15px;
+  min-height: 60px;
+}
+.site-main article .entry-footer .left .cat-links {
+  padding-right: 5px;
+}
+.site-main article .entry-footer .left .cat-links a {
+  color: #000;
+  font-size: 13px;
+}
+.site-main article .entry-footer .left .cat-links:before {
+  font-family: FontAwesome;
+  content: "\f07c";
+  padding-right: 3px;
+}
+.site-main article .entry-footer .left .tags-links {
+  padding-right: 5px;
+}
+.site-main article .entry-footer .left .tags-links a {
+  color: #000;
+  font-size: 13px;
+}
+.site-main article .entry-footer .left .tags-links:before {
+  font-family: FontAwesome;
+  content: "\f02c";
+  padding-right: 3px;
+}
+.site-main article .entry-footer .left .comments-link a {
+  color: #000;
+  font-size: 13px;
+}
+.site-main article .entry-footer .left .comments-link:before {
+  font-family: FontAwesome;
+  content: "\f0e5";
+  padding-right: 3px;
+}
+.site-main article .entry-footer .right {
+  text-align: right;
+}
+.site-main article .entry-footer .right a {
+  padding: 10px 15px;
+  color: #fff;
+  background: #811000;
+}
+.site-main article .entry-footer .right a:hover {
+  text-decoration: none;
+}
+.site-content {
+  background: #efefef;
+  padding-top: 40px;
 }

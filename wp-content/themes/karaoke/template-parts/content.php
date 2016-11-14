@@ -21,22 +21,24 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<div class="row">
-			<div class="col-md-4">
-				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail('full') ?></a>
-			</div>
-			<div class="col-md-8">
-				<?php the_excerpt() ?>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail('full') ?></a>
+				</div>
+				<div class="col-md-8">
+					<?php the_excerpt() ?>
+				</div>
 			</div>
 		</div>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
 		<div class="row">
-			<div class="col-md-10 left">
+			<div class="col-md-9 left">
 				<?php karaoke_entry_footer(); ?>
 			</div>
-			<div class="col-md-2 right">
+			<div class="col-md-3 right">
 				<a href="<?php the_permalink() ?>">Read more</a>
 			</div>
 		</div>

@@ -1,0 +1,78 @@
+.site-main {
+  article {
+      background: #fff;
+      .entry-title {
+          font-size: 29px;
+          padding: 20px 15px;
+          a {
+              color: #000;
+              font-weight: normal;
+              &:hover {
+                  text-decoration: none;
+                  color: @background_content;
+              }
+          }
+      }
+      .entry-content {
+          padding-bottom: 20px;
+      }
+      .entry-footer {
+          background-color: #f9f9f9;
+          padding: 20px 15px;
+          min-height: 60px;
+          .left {
+              .cat-links {
+                  padding-right: 5px;
+                  a {
+                      color: #000;
+                      font-size: 13px;
+                  }
+                  &:before {
+                      font-family: FontAwesome;
+                      content: "\f07c";
+                      padding-right: 3px;
+                  }
+              }
+              .tags-links {
+                  padding-right: 5px;
+                      a {
+                        color: #000;
+                        font-size: 13px;
+                      }
+                      &:before {
+                        font-family: FontAwesome;
+                        content: "\f02c";
+                        padding-right: 3px;
+                      }
+              }
+              .comments-link {
+                  a {
+                    color: #000;
+                    font-size: 13px;
+                  }
+                  &:before {
+                    font-family: FontAwesome;
+                    content: "\f0e5";
+                    padding-right: 3px;
+                  }
+              }
+          }
+          .right {
+              text-align: right;
+              a {
+                  padding: 10px 15px;
+                  color: #fff;
+                  background: @background_content;
+                  &:hover {
+                      text-decoration: none;
+                  }
+              }
+          }
+      }
+  }
+}
+
+.site-content {
+    background: #efefef;
+    padding-top: 40px;
+}
