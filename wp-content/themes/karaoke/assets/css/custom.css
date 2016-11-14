@@ -1,0 +1,49 @@
+footer {
+  background: #6a614f;
+  color: #9d9686;
+  font-size: 14px;
+  padding-top: 50px;
+}
+footer .footer {
+  border-bottom: 1px solid #9d9686;
+}
+footer .footer .col-md-4 .widget-title {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+footer .footer .col-md-4 a {
+  color: #9d9686;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+footer .footer .col-md-4 ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+footer .footer .col-md-4 ul li {
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+footer .footer .col-md-4 ul li .fa {
+  font-size: 24px;
+  padding-right: 5px;
+}
+footer .footer .col-md-4 .wpcf7-form .wpcf7-email {
+  width: 70%;
+  float: left;
+  margin-right: 5px;
+  height: 30px;
+  border: none;
+}
+footer .footer .col-md-4 .wpcf7-form .wpcf7-submit {
+  height: 30px;
+  background: #811000;
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  padding-bottom: 10px;
+}
+footer .copyright {
+  padding-top: 30px;
+  text-align: center;
+}
