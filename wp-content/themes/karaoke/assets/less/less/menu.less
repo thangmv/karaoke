@@ -1,0 +1,258 @@
+/*--------menu----------*/
+@header-margin:auto;
+header{
+  margin-left:@header-margin;
+  margin-right:@header-margin;
+  .container{
+    .row{
+      .logo{
+
+      }
+      .main-navigation{
+        padding-left:100px;
+        .menu-menu-container{
+          ul{
+            .current-menu-item{
+              background-image: url('/karaoke/wp-content/themes/karaoke/assets/images/menu-selected.gif');
+              background-repeat: no-repeat;
+              background-position: top center;
+              a{
+                color:#ff8700;
+              }
+            }
+            li{
+              float: left;
+              margin: 0 32px 0 0;
+              padding: 14px 0 0;
+              a{
+                color:black;
+                font-weight: 500;
+                &:hover,&:focus,&:visited{
+                  text-decoration: none;
+                }
+                &:hover{
+                  color:#ff8700;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 993px) {
+  header{
+    .container{
+      .row{
+        .main-navigation{
+          padding-left:28px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px){
+
+  header{
+    margin:0;
+    .container{
+      margin:0;
+      width:100%;
+      .row{
+        .logo{
+          left:26%;
+        }
+        .main-navigation{
+          padding:0;
+
+          .menu-menu-container{
+            ul{
+              .current-menu-item{
+                background:none;
+              }
+              li{
+                &:first-child{
+                  padding-left:23%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 710px){
+  header{
+    .container{
+      .row{
+        .logo{
+
+        }
+        .main-navigation{
+
+          .menu-menu-container{
+            ul{
+              li{
+                margin: 0 20px 0 0;
+                &:first-child{
+                  padding-left:20%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 599px){
+  header{
+    .container{
+      .row{
+        .logo{
+
+        }
+        .main-navigation{
+
+          .menu-menu-container{
+            ul{
+              li{
+                margin: 0 20px 0 0;
+                &:first-child{
+                  padding-left:17%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px){
+  header{
+    .container{
+      .row{
+        .logo{
+
+        }
+        .main-navigation{
+
+          .menu-menu-container{
+            ul{
+              li{
+                margin: 0 20px 0 0;
+                &:first-child{
+                  padding-left:10%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 450px){
+  header{
+    .container{
+      .row{
+        .logo{
+
+        }
+        .main-navigation{
+
+          .menu-menu-container{
+            ul{
+              li{
+                margin: 0 20px 0 0;
+                &:first-child{
+                  padding-left:20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 424px){
+  header{
+    .container{
+      .row{
+        .logo{
+
+        }
+        .main-navigation{
+
+          .menu-menu-container{
+            ul{
+              li{
+                margin: 0 10px 0 0;
+                &:first-child{
+                  padding-left:20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 390px){
+  header{
+    .container{
+      .row{
+        .logo{
+
+        }
+        .main-navigation{
+
+          .menu-menu-container{
+            ul{
+              li{
+                margin: 0 10px 0 0;
+                &:first-child{
+                  padding-left:20px;
+                }
+                a{
+                  font-size:15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 368px){
+  header{
+    .container{
+      .row{
+        .logo{
+
+        }
+        .main-navigation{
+
+          .menu-menu-container{
+            ul{
+              li{
+                margin: 0 54px 0 0;
+                padding-left: 17px !important;
+                &:last-child{
+                  padding-left: 29px !important;
+                }
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
