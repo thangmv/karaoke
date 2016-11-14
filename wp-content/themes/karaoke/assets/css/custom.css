@@ -47,3 +47,30 @@ footer .copyright {
   padding-top: 30px;
   text-align: center;
 }
+.widget-area section .widget-title {
+  padding: 15px 10px;
+  text-transform: uppercase;
+  font-family: arial;
+  font-size: 14px;
+  font-weight: 700;
+  border-top: 3px solid #811000;
+  background: #C1C1C1;
+}
+.widget-area section ul {
+  margin-left: 0;
+  padding-left: 10px;
+}
+.widget-area section ul li {
+  list-style-type: none;
+}
+.widget-area section ul li a {
+  font-size: 14px;
+  color: #000;
+  line-height: 28px;
+}
+.widget-area .widget_recent_entries ul li {
+  padding: 13px 0;
+}
+.widget-area .widget_recent_entries ul li:first-child {
+  padding: 0;
+}
