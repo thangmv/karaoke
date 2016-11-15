@@ -6,7 +6,7 @@ Template name: Contact
     <div class="container" id="about">
         <div class="row">
             <?php require ("/menu-tab.php");?>
-            <div class="col-md-7 pagecontent">
+            <div class="col-md-7 col-xs-12 pagecontent">
                 <h1><?php the_title();?></h1>
                 <?php if ( have_posts() ) while ( have_posts() ) : the_post();
                     echo the_content();
