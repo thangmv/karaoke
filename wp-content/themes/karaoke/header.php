@@ -25,15 +25,22 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 col-xs-6 logo">
+				<div class="col-md-5 col-sm-4 col-xs-12 logo">
 					<a href="http://localhost/karaoke">
 						<img src="/karaoke/wp-content/themes/karaoke/assets/images/logo.png"/>
 					</a>
 				</div>
-				<nav id="site-navigation" class="col-md-8 col-xs-12 main-navigation" role="navigation">
-
+				<div class="col-md-1"></div>
+				<nav id="site-navigation" class="col-md-6 col-sm-8 main-navigation" role="navigation">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
 				</nav><!-- #site-navigation -->
+
 
 			</div>
 		</div>
