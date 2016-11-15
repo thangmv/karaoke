@@ -1,15 +1,22 @@
+// Blog
+
+.blog,
+.blog-single {
+    margin-top: -111px;
+}
+
 .site-main {
   article {
-      background: #fff;
+      background: @background_content;
+      color: #C1C1C1;
       .entry-title {
           font-size: 29px;
-          padding: 20px 15px;
+          padding: 0 15px;
           a {
-              color: #000;
+              color: #f80;
               font-weight: normal;
               &:hover {
                   text-decoration: none;
-                  color: @background_content;
               }
           }
       }
@@ -17,14 +24,13 @@
           padding-bottom: 20px;
       }
       .entry-footer {
-          background-color: #f9f9f9;
           padding: 20px 15px;
           min-height: 60px;
           .left {
               .cat-links {
                   padding-right: 5px;
                   a {
-                      color: #000;
+                      color: #C1C1C1;
                       font-size: 13px;
                   }
                   &:before {
@@ -36,7 +42,7 @@
               .tags-links {
                   padding-right: 5px;
                       a {
-                        color: #000;
+                        color: #C1C1C1;
                         font-size: 13px;
                       }
                       &:before {
@@ -47,7 +53,7 @@
               }
               .comments-link {
                   a {
-                    color: #000;
+                    color: #C1C1C1;
                     font-size: 13px;
                   }
                   &:before {
@@ -62,10 +68,6 @@
               a {
                   padding: 10px 15px;
                   color: #fff;
-                  background: @background_content;
-                  &:hover {
-                      text-decoration: none;
-                  }
               }
           }
       }
@@ -75,4 +77,93 @@
 .site-content {
     background: #efefef;
     padding-top: 40px;
+}
+
+@media(max-width: 991px) {
+    .site-main article .entry-footer .right a {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .site-main article .entry-footer .left {
+        padding-bottom: 15px;
+    }
+    .site-main article .entry-footer .right {
+        text-align: left;
+    }
+    .blog,
+    .blog-single {
+        margin-top: 0;
+    }
+}
+
+//Blog Single
+
+.single {
+    .site-content {
+        article {
+            .entry-content {
+                margin: 0;
+                .thumbnail {
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .title {
+                    padding: 15px 0;
+                }
+                .posted-on {
+                    padding-left: 15px;
+                    padding-bottom: 15px;
+                    .cat-links {
+                        padding-right: 5px;
+                        a {
+                            color: #000;
+                            font-size: 13px;
+                        }
+                        &:before {
+                            font-family: FontAwesome;
+                            content: "\f07c";
+                            padding-right: 3px;
+                        }
+                    }
+                    .tags-links {
+                        padding-right: 5px;
+                        a {
+                            color: #000;
+                            font-size: 13px;
+                        }
+                        &:before {
+                            font-family: FontAwesome;
+                            content: "\f02c";
+                            padding-right: 3px;
+                        }
+                    }
+                    .comments-link {
+                        a {
+                            color: #000;
+                            font-size: 13px;
+                        }
+                        &:before {
+                            font-family: FontAwesome;
+                            content: "\f0e5";
+                            padding-right: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .nav-links {
+        a {
+            font-size: 14px;
+            font-weight: 600;
+            color: #000;
+            &:hover {
+                color: @background_content;
+            }
+        }
+    }
 }

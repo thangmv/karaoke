@@ -33,15 +33,5 @@
 		</div>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<div class="row">
-			<div class="col-md-9 left">
-				<?php karaoke_entry_footer(); ?>
-			</div>
-			<div class="col-md-3 right">
-				<a href="<?php the_permalink() ?>">Read more</a>
-			</div>
-		</div>
-
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
