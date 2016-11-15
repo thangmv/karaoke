@@ -258,11 +258,14 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
   }
 }
 @media only screen and (max-width: 368px) {
+  header .container .row .main-navigation {
+    padding-left: 32px;
+  }
   header .container .row .main-navigation .menu-menu-container ul li {
     margin: 0 54px 0 0;
     padding-left: 17px !important;
   }
   header .container .row .main-navigation .menu-menu-container ul li:last-child {
-    padding-left: 29px !important;
+    padding-left: 8px !important;
   }
 }
