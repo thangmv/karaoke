@@ -231,7 +231,7 @@ header .container .row {
   margin: 0 200px;
 }
 header .container .row .main-navigation .menu-menu-container ul .current-menu-item {
-  background-image: url('/karaoke/wp-content/themes/karaoke/assets/images/menu-selected.gif');
+  background-image: url('http://localhost/karaoke/wp-content/uploads/2016/11/menu-selected.gif');
   background-repeat: no-repeat;
   background-position: top center;
 }
