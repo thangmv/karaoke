@@ -76,3 +76,25 @@ if( !function_exists('karaoke_widgets') ) {
     }
     add_action( 'widgets_init', 'karaoke_widgets' );
 }
+
+
+if( !function_exists('karaoke_post_type_rooms') ) {
+    function karaoke_post_type_rooms() {
+        $args = [
+            'labels'        => [
+                'name'      => __( 'Rooms' ),
+                'add_new'   => __( 'Add Room' ),
+                'edit_item' => __( 'Edit Rooms' ),
+            ],
+            'public' => true,
+            'rewrite' => array('slug' => 'rooms'),
+            'has_archive' => true,
+            'menu_icon' => 'dashicons-cart',
+            'supports' => ['title', 'thumbnail','editor','custom-fields'],
+        ];
+
+        register_post_type('room', $args);
+    }
+
+    add_action('init', 'karaoke_post_type_rooms');
+}

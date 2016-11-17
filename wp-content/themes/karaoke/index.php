@@ -18,7 +18,7 @@ get_header(); ?>
 		<div class="row">
 			<?php get_template_part('template-parts/menu-tab') ?>
 			<div class="col-md-7 blog">
-				<div class="col-md-9 content">
+				<div class="col-md-12 content">
 					<div id="primary" class="content-area">
 						<main id="main" class="site-main" role="main">
 
@@ -55,9 +55,6 @@ get_header(); ?>
 
 						</main><!-- #main -->
 					</div><!-- #primary -->
-				</div>
-				<div class="col-md-3 sidebar">
-					<?php get_sidebar(); ?>
 				</div>
 			</div>
 		</div>
