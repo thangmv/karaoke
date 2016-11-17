@@ -7,20 +7,20 @@
     </div>
     <div class="col-md-6 col-xs-6 single-menu">
         <a href="#">
-            <p class="title">Menu</p>
+            <p class="title">Đặt phòng</p>
             <img src="/karaoke/wp-content/themes/karaoke/assets/images/button-rooms.jpg"/>
         </a>
     </div>
     <div class="col-md-6 col-xs-6 single-menu">
-        <a href="#">
-            <img src="/karaoke/wp-content/themes/karaoke/assets/images/button-menu.jpg"/>
-            <p class="title">Menu</p>
+        <a href="http://localhost/karaoke/album-anh/">
+            <img src="/karaoke/wp-content/themes/karaoke/assets/images/button-events.jpg"/>
+            <p class="title">Album</p>
         </a>
     </div>
     <div class="col-md-6 col-xs-6 single-menu">
-        <a href="#">
-            <img src="/karaoke/wp-content/themes/karaoke/assets/images/button-rooms.jpg"/>
-            <p class="title">Menu</p>
+        <a href="http://localhost/karaoke/lien-he">
+            <img src="/karaoke/wp-content/themes/karaoke/assets/images/button-drinks.jpg"/>
+            <p class="title">Liên hệ</p>
         </a>
     </div>
 </div>
