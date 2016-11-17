@@ -27,10 +27,9 @@
 			<div class="row">
 				<div class="col-md-5 col-sm-4 col-xs-12 logo">
 					<a href="http://localhost/karaoke">
-						<img src="/karaoke/wp-content/themes/karaoke/assets/images/logo.png"/>
+						<img src="http://localhost/karaoke/wp-content/uploads/2016/11/logo-test.png"/>
 					</a>
 				</div>
-				<div class="col-md-1"></div>
 				<nav id="site-navigation" class="col-md-6 col-sm-8 main-navigation" role="navigation">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 						<span class="icon-bar"></span>

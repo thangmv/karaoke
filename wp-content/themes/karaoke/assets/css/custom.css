@@ -241,7 +241,7 @@ header .container .row .main-navigation .menu-menu-container ul .current-menu-it
 header .container .row .main-navigation .menu-menu-container ul li {
   float: left;
   margin: 0 32px 0 0;
-  padding: 14px 0 0;
+  padding: 33px 0 0;
 }
 header .container .row .main-navigation .menu-menu-container ul li a {
   color: white;
@@ -357,7 +357,6 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
   margin: 0 100px;
 }
 #about .row .pagecontent {
-  margin-top: -100px;
   margin-bottom: 50px;
 }
 #about .row .pagecontent h1 {
