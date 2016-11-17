@@ -125,6 +125,7 @@ function karaoke_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'karaoke_scripts' );
 
+
 /**
  * Implement the Custom Header feature.
  */

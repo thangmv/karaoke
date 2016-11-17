@@ -27,7 +27,7 @@
 			<div class="row">
 				<div class="col-md-5 col-sm-4 col-xs-12 logo">
 					<a href="http://localhost/karaoke">
-						<img src="http://localhost/karaoke/wp-content/uploads/2016/11/logo-test.png"/>
+						<img src="http://localhost/karaoke/wp-content/uploads/2016/11/logo-3.png"/>
 					</a>
 				</div>
 				<nav id="site-navigation" class="col-md-6 col-sm-8 main-navigation" role="navigation">

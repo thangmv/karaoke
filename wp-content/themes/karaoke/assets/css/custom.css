@@ -266,7 +266,7 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
 @media only screen and (max-width: 940px) {
   header .container .row .main-navigation .menu-menu-container ul li {
     margin: 0 20px 0 0;
-    padding: 14px 0 0;
+    padding: 33px 0 0;
   }
   header .container .row .main-navigation .menu-menu-container ul li a {
     font-size: 14px;
@@ -350,6 +350,9 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
     width: 22px;
     height: 2px;
     border-radius: 1px;
+  }
+  header .container .row .main-navigation .menu-menu-container ul li {
+    padding: 20px 0 0;
   }
 }
 /*---------about---------*/
@@ -460,5 +463,25 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
 @media only screen and (max-width: 375px) {
   .menu-tab .single-menu {
     height: 100px;
+  }
+}
+/*----gallery-----*/
+#gallery .row {
+  margin: 0 100px;
+}
+#gallery .row .section-gallery .single .fancybox img {
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 1316px) {
+  #gallery {
+    width: 100%;
+    margin: 0;
+  }
+  #gallery .row {
+    margin: 0;
   }
 }

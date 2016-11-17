@@ -108,3 +108,24 @@ if( !function_exists('karaoke_post_type_rooms') ) {
 
     add_action('init', 'karaoke_post_type_rooms');
 }
+if( !function_exists('karaoke_post_type_pictures') ) {
+    function karaoke_post_type_pictures() {
+        $args = [
+            'labels'        => [
+                'name'      => __( 'Pictures' ),
+                'add_new'   => __( 'Add Picture' ),
+                'edit_item' => __( 'Edit Picture' ),
+            ],
+            'public' => true,
+            'rewrite' => array('slug' => 'rooms'),
+            'has_archive' => true,
+            'menu_icon' => 'dashicons-cart',
+            'supports' => ['title', 'thumbnail','editor','custom-fields'],
+        ];
+
+        register_post_type('picture', $args);
+    }
+
+    add_action('init', 'karaoke_post_type_pictures');
+}
+

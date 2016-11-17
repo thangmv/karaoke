@@ -3,9 +3,22 @@
 Template name: Gallery
 */?>
 <?php get_header();?>
-
-<a class="fancybox" rel="group" href="http://fancyapps.com/fancybox/demo/1_b.jpg"><img src="http://fancyapps.com/fancybox/demo/1_s.jpg" alt="" /></a>
-
-<h1>dasdafd</h1>
+<?php
+$pic = new WP_Query([
+    'post_type' => 'picture',
+]);
+?>
+<div class="container" id="gallery">
+    <div class="row">
+        <section class="section-gallery">
+            <?php
+            while ($pic->have_posts()) {
+                $pic->the_post();
+                get_template_part('inc/single-pic');
+            }
+            ?>
+        </section>
+    </div>
+</div>
 
 <?php get_footer();?>
