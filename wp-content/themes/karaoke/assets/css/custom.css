@@ -469,12 +469,17 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
 #gallery .row {
   margin: 0 100px;
 }
-#gallery .row .section-gallery .single .fancybox img {
+#gallery .row .section-gallery .single .fancybox .single-pic {
   height: 200px;
+  width: 200px;
+  background-size: cover;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
+}
+#wpadminbar {
+  display: none;
 }
 @media only screen and (max-width: 1316px) {
   #gallery {
@@ -483,5 +488,16 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
   }
   #gallery .row {
     margin: 0;
+  }
+}
+@media only screen and (min-width: 576px) {
+  #gallery .row .section-gallery .single .fancybox .single-pic {
+    background-position: center center;
+  }
+}
+@media only screen and (max-width: 899px) {
+  #gallery .row .section-gallery .single .fancybox .single-pic {
+    height: 300px;
+    width: auto;
   }
 }

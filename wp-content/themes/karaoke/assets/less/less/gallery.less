@@ -5,17 +5,23 @@
     .section-gallery{
       .single{
         .fancybox{
-          img{
+          .single-pic{
             height:200px;
+            width:200px;
+            background-size:cover;
             display: block;
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 50px;
+
           }
         }
       }
     }
   }
+}
+#wpadminbar{
+  display:none;
 }
 @media only screen and (max-width: 1316px) {
   #gallery{
@@ -23,6 +29,40 @@
     margin: 0;
     .row{
       margin: 0;
+    }
+  }
+}
+@media only screen and (min-width: 576px) {
+  #gallery{
+    .row{
+      .section-gallery{
+        .single{
+          .fancybox{
+            .single-pic{
+              background-position: center center;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  #gallery{
+    .row{
+      .section-gallery{
+        .single{
+          .fancybox{
+            .single-pic{
+              height:300px;
+              width:auto;
+
+            }
+          }
+        }
+      }
     }
   }
 }
