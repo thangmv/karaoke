@@ -23,10 +23,10 @@
 	<div class="entry-content">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail('full') ?></a>
 				</div>
-				<div class="col-md-8">
+				<div class="col-md-6">
 					<?php the_excerpt() ?>
 				</div>
 			</div>
