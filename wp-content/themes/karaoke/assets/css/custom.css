@@ -219,10 +219,10 @@
 }
 /*--------menu----------*/
 body {
-  background-color: #811000 !important;
+  background-image: url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/body.jpg');
 }
 .site-content {
-  background-color: #811000 !important;
+  background: transparent;
 }
 header .container {
   width: 100%;
