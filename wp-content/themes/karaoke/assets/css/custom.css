@@ -219,12 +219,16 @@
 }
 /*--------menu----------*/
 body {
-  background-image: url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/body.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background: transparent;
 }
 .site-content {
   background: transparent;
+}
+header {
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 100;
 }
 header .container {
   width: 100%;
@@ -499,4 +503,133 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
     height: 300px;
     width: auto;
   }
+}
+/*----homepage----*/
+#homepage .row {
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+#homepage .tab-1 {
+  margin-top: -40px;
+}
+#homepage .tab-1 img {
+  width: 100%;
+  height: 100vh;
+}
+#homepage .tab-about {
+  height: auto;
+}
+#homepage .tab-about .section-title {
+  margin-bottom: 82px;
+  padding-top: 100px;
+}
+#homepage .tab-about .section-title .page-title {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: #333 !important;
+}
+#homepage .tab-about .section-title .bordertitle {
+  height: 43px;
+  width: 100%;
+  margin: 0px auto;
+  overflow: hidden;
+  position: relative;
+}
+#homepage .tab-about .section-title .bordertitle .borderleft {
+  background-color: #ee232b;
+  position: absolute;
+  margin-left: 15px;
+  bottom: 10px;
+  left: 50%;
+  display: block;
+  height: 1px;
+  width: 100px;
+}
+#homepage .tab-about .section-title .bordertitle .bordericon {
+  color: #ee232b;
+  width: 30px;
+  height: 19px;
+  line-height: 19px;
+  font-size: 19px;
+  text-align: center;
+  position: absolute;
+  margin-left: -15px;
+  bottom: 0;
+  left: 50%;
+  display: block;
+}
+#homepage .tab-about .section-title .bordertitle .borderright {
+  background-color: #ee232b;
+  left: auto;
+  right: 50%;
+  margin-right: 15px;
+  position: absolute;
+  margin-left: 15px;
+  bottom: 10px;
+  display: block;
+  height: 1px;
+  width: 100px;
+}
+#homepage .tab-about .main-page .row .info {
+  padding-left: 50px;
+}
+#homepage .tab-about .main-page .row .info .welcome {
+  padding-left: 39px;
+  margin-bottom: 18px;
+}
+#homepage .tab-about .main-page .row .info ul {
+  margin: auto;
+}
+#homepage .tab-3 {
+  background-image: url("http://ceokaraoke.com.au/wp-content/uploads/2014/11/bg-test.png");
+  background-position: 50% 19px;
+  background-attachment: fixed;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  background-repeat: no-repeat;
+}
+#homepage .tab-3 .container .row .icn-container {
+  border-style: solid;
+  padding: 20px;
+  font-size: 28px;
+  line-height: 28px;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  display: block;
+  border-width: 0px;
+  padding-bottom: 48px;
+}
+#homepage .tab-3 .container .row h2 {
+  font-size: 37px;
+  font-weight: 300;
+  letter-spacing: -2px;
+  text-align: center;
+  line-height: 100%;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif !important;
+  color: white;
+}
+#homepage .tab-3 .container .row .spacer {
+  display: block;
+  clear: both;
+  width: 100%;
+}
+#homepage .tab-3 .container .row h5 {
+  text-align: center;
+  color: white;
+}
+#homepage .albumanh {
+  height: 100vh;
+}
+#homepage .albumanh #gallery .section-gallery .single .fancybox .single-pic {
+  height: 200px;
+  background-size: cover;
+  display: block;
+  margin-bottom: 20px;
 }

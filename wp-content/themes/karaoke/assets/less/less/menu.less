@@ -1,9 +1,7 @@
 /*--------menu----------*/
 @header-margin:auto;
 body{
-  background-image:url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/body.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background: transparent;
 
 }
 .site-content{
@@ -11,7 +9,11 @@ body{
 
 }
 header{
-    .container{
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 100;
+  .container{
       width:100%;
       .row{
         margin:0 200px;
