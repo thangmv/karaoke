@@ -5,7 +5,7 @@ Template name: Homepage
 <?php get_header();?>
 <div id="homepage">
     <div class="tab-1">
-        <img src="http://localhost/karaoke/wp-content/uploads/2016/11/slider2.png"/>
+        <img src="http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/slider2.png"/>
     </div>
     <div class="tab-about">
         <div class="section-title">
@@ -22,7 +22,7 @@ Template name: Homepage
         <div class="main-page container">
             <div class="row">
                 <div class="picture col-md-5">
-                    <img src="http://localhost/karaoke/wp-content/uploads/2016/11/about.jpg"/>
+                    <img src="http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/about.jpg"/>
                 </div>
                 <div class="info col-md-6">
                     <h3 class="welcome">
