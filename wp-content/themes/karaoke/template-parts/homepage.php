@@ -42,7 +42,7 @@ Template name: Homepage
             </div>
         </div>
     </div>
-    <div class="tab-3">
+    <div class="tab-3" style=" background-image:url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/bg-test.png');">
         <div class="container">
             <div class="row">
                 <div class="icn-container fa fa-quote-left aligncenter type3" style="border-color:#fff;color:#fff;"></div>
@@ -60,9 +60,20 @@ Template name: Homepage
             'post_type' => 'picture',
         ]);
         ?>
-        <div id="gallery">
+        <div class="section-title">
+            <h1 class="page-title">
+                <span>Album ảnh</span>
+            </h1>
+            <div class="bordertitle">
+                <span class="borderleft"></span>
+                <span class="bordericon fa fa-circle-o"></span>
+                <span class="borderright"></span>
+            </div>
+
+        </div>
+        <div id="album">
             <div>
-                <section class="section-gallery">
+                <section class="section-album">
                     <?php
                     while ($pic->have_posts()) {
                         $pic->the_post();
