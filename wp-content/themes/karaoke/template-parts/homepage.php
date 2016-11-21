@@ -54,7 +54,7 @@ Template name: Homepage
             </div>
         </div>
     </div>
-    <div class="albumanh">
+    <div class="tab-albumanh">
         <?php
         $pic = new WP_Query([
             'post_type' => 'picture',
@@ -72,7 +72,7 @@ Template name: Homepage
 
         </div>
         <div id="album">
-            <div>
+            <div class="container" style="padding:0;margin:0; width:100%;">
                 <section class="section-album">
                     <?php
                     while ($pic->have_posts()) {
@@ -82,6 +82,28 @@ Template name: Homepage
                     ?>
                 </section>
             </div>
+        </div>
+    </div>
+    <div class="tab-contact" style=" background-image:url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/slider3.png');">
+        <div class="section-title">
+            <h1 class="page-title">
+                <span style="color:white;">Liên Hệ</span>
+            </h1>
+            <div class="bordertitle">
+                <span class="borderleft"></span>
+                <span class="bordericon fa fa-circle-o"></span>
+                <span class="borderright"></span>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <p>Địa chỉ</p>
+                <p>KARAOKE X3 - TÔN VINH GIỌNG HÁT VIỆT</p>
+                <p>Số nhà 123 - Đường Nguyễn Thái Học - Tổ 16 phường Minh Khai - Tp Hà Giang</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2600.2328230478847!2d104.98602026759691!3d22.828960627120605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x36cc79b5327ec091%3A0x90963af63a51431a!2zMTIzIE5ndXnDqsyDbiBUaGHMgWkgSG_Mo2MsIFRy4bqnbiBQaMO6LCB0cC4gSMOgIEdpYW5nLCBIw6AgR2lhbmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1479717769460" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+
         </div>
     </div>
 </div>
