@@ -683,6 +683,7 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
   width: 100px;
 }
 #homepage .tab-albumanh #album .section-album .single {
+  background: black;
   padding: 0;
 }
 #homepage .tab-albumanh #album .section-album .single .fancybox .single-pic {
@@ -691,6 +692,9 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
   border: solid 1px white;
   max-width: 100%;
   height: 337px;
+}
+#homepage .tab-albumanh #album .section-album .single .fancybox .single-pic:hover {
+  opacity: 0.5;
 }
 #homepage .tab-contact {
   background-repeat: no-repeat;

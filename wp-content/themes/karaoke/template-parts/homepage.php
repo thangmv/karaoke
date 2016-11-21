@@ -7,7 +7,7 @@ Template name: Homepage
     <div class="tab-1">
         <img src="http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/slider2.png"/>
     </div>
-    <div class="tab-about">
+    <div class="tab-about" id="about">
         <div class="section-title">
             <h1 class="page-title">
                 <span>Giới Thiệu</span>
@@ -54,7 +54,7 @@ Template name: Homepage
             </div>
         </div>
     </div>
-    <div class="tab-albumanh">
+    <div class="tab-albumanh" id="album-anh">
         <?php
         $pic = new WP_Query([
             'post_type' => 'picture',
@@ -84,7 +84,7 @@ Template name: Homepage
             </div>
         </div>
     </div>
-    <div class="tab-contact" style=" background-image:url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/slider3.png');">
+    <div class="tab-contact" id="contact" style=" background-image:url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/slider3.png');">
         <div class="section-title">
             <h1 class="page-title">
                 <span style="color:white;">Liên Hệ</span>
