@@ -28,6 +28,18 @@
 				</div>
 				<div class="col-md-6">
 					<?php the_excerpt() ?>
+					<?php if(get_post_meta($post->ID, 'capacity', true) &&get_post_meta($post->ID, 'price', true)) : ?>
+					<div class="info">
+						<div class="col-md-6 capacity">
+							<span class="metabox">Capacity: </span>
+							<?php echo get_post_meta($post->ID, 'capacity', true) ?>
+						</div>
+						<div class="col-md-6 price">
+							<span class="metabox">Price: </span>
+							<?php echo get_post_meta($post->ID, 'price', true) ?>
+						</div>
+					</div>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>

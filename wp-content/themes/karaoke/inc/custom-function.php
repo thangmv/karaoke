@@ -100,7 +100,7 @@ if( !function_exists('karaoke_post_type_rooms') ) {
             'rewrite' => array('slug' => 'rooms'),
             'has_archive' => true,
             'menu_icon' => 'dashicons-cart',
-            'supports' => ['title', 'thumbnail','editor','custom-fields'],
+            'supports' => ['title', 'thumbnail','editor'],
         ];
 
         register_post_type('room', $args);
@@ -128,4 +128,55 @@ if( !function_exists('karaoke_post_type_pictures') ) {
 
     add_action('init', 'karaoke_post_type_pictures');
 }
+
+add_action( 'add_meta_boxes','add_room_metaboxes' );
+function add_room_metaboxes() {
+    add_meta_box('room_info', 'Room Information', 'wp_room_info', 'room', 'normal', 'high');
+}
+
+function wp_room_info()
+{
+    // $post is already set, and contains an object: the WordPress post
+    global $post;
+    $values = get_post_custom( $post->ID );
+    $capacity = isset( $values['capacity'] ) ? $values['capacity'][0] : '';
+    $price = isset( $values['price'] ) ? $values['price'][0] : '';
+
+    // We'll use this nonce field later on when saving.
+    wp_nonce_field( 'my_meta_box_nonce', 'meta_box_nonce' );
+    ?>
+    <p>
+        <label for="capacity">Capacity</label>
+        <input type="text" name="capacity" id="capacity" value="<?php echo $capacity; ?>" />
+    </p>
+    <p>
+        <label for="price">Price</label>
+        <input type="text" name="price" id="price" value="<?php echo $price; ?>" />
+    </p>
+
+    <?php
+}
+
+
+add_action( 'save_post', 'cd_meta_box_save' );
+function cd_meta_box_save( $post_id )
+{
+    // Bail if we're doing an auto save
+    if( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+
+    // if our nonce isn't there, or we can't verify it, bail
+    if( !isset( $_POST['meta_box_nonce'] ) || !wp_verify_nonce( $_POST['meta_box_nonce'], 'my_meta_box_nonce' ) ) return;
+
+    // if our current user can't edit this post, bail
+    if( !current_user_can( 'edit_post' ) ) return;
+
+    // Make sure your data is set before trying to save it
+    if( isset( $_POST['capacity'] ) )
+        update_post_meta( $post_id, 'capacity', $_POST['capacity'] );
+
+    if( isset( $_POST['price'] ) )
+        update_post_meta( $post_id, 'price', $_POST['price'] );
+
+}
+
 
