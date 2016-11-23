@@ -96,6 +96,7 @@
     background-attachment: fixed;
     padding-top: 120px;
     padding-bottom: 80px;
+    background-size: cover;
     background-repeat: no-repeat;
     .container{
       .row{
@@ -218,6 +219,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
+    background-color:black;
     .section-title{
       margin-bottom: 30px;
       padding-top:100px;
@@ -276,20 +278,56 @@
     }
     .container{
       .row{
-        p{
-          font-size: 20px;
-          font-weight: 300;
-          text-align: center;
-          line-height: 110%;
-          margin-bottom: 10px;
-          font-family: 'Montserrat', sans-serif !important;
-          color:white;
-
-        }
-      }
-      iframe{
+        iframe{
         margin-bottom:82px;
       }
+        .add{
+          p{
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 30px;
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif !important;
+            color:white;
+          }
+          h3{
+            color:red;
+            margin-bottom:10px;
+          }
+          .space{
+            margin-bottom:20px;
+          }
+        }
+        .form{
+          .ykien{
+            clear: both;
+            margin: 0;
+            padding:20px;
+            border: 1px solid #d3d3d3;
+            border-radius: 3px;
+            background-color: #eee;
+            .form-title{
+              border-bottom:solid 1px rgba(0,0,0,0.2);
+              margin-bottom:-10px;
+              h3{
+
+              }
+            }
+            .wpcf7-text{
+              width:100%;
+            }
+            label{
+              width:100%;
+            }
+            .form-field{
+              textarea{
+                height:150px;
+              }
+            }
+          }
+        }
+      }
+
     }
   }
 }

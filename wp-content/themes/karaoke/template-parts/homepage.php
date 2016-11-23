@@ -84,7 +84,7 @@ Template name: Homepage
             </div>
         </div>
     </div>
-    <div class="tab-contact" id="contact" style=" background-image:url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/slider3.png');">
+    <div class="tab-contact" id="contact" style=" background-image:url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/contact.jpg');">
         <div class="section-title">
             <h1 class="page-title">
                 <span style="color:white;">Liên Hệ</span>
@@ -98,11 +98,19 @@ Template name: Homepage
         </div>
         <div class="container">
             <div class="row">
-                <p>Địa chỉ</p>
-                <p>KARAOKE X3 - TÔN VINH GIỌNG HÁT VIỆT</p>
-                <p>Số nhà 123 - Đường Nguyễn Thái Học - Tổ 16 phường Minh Khai - Tp Hà Giang</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2600.2328230478847!2d104.98602026759691!3d22.828960627120605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x36cc79b5327ec091%3A0x90963af63a51431a!2zMTIzIE5ndXnDqsyDbiBUaGHMgWkgSG_Mo2MsIFRy4bqnbiBQaMO6LCB0cC4gSMOgIEdpYW5nLCBIw6AgR2lhbmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1479717769460" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                <div class="col-md-6 add">
+                    <h3>Địa chỉ</h3>
+                    <p>KARAOKE X3 - TÔN VINH GIỌNG HÁT VIỆT</p>
+                    <p>Số nhà 123 - Đường Nguyễn Thái Học - Tổ 16 phường Minh Khai - Tp Hà Giang</p>
+                    <div class="space"></div>
+                </div>
+                <div class="col-md-6 form">
+                    <?php echo do_shortcode('[contact-form-7 id="8" title="Ý kiến khách hàng"]') ?>
+                </div>
+
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2600.2328230478847!2d104.98602026759691!3d22.828960627120605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x36cc79b5327ec091%3A0x90963af63a51431a!2zMTIzIE5ndXnDqsyDbiBUaGHMgWkgSG_Mo2MsIFRy4bqnbiBQaMO6LCB0cC4gSMOgIEdpYW5nLCBIw6AgR2lhbmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1479717769460" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 
         </div>
     </div>
