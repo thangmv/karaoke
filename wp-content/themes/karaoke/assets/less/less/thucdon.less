@@ -1,0 +1,204 @@
+/*--thuc don--*/
+#homepage{
+  .thucdon{
+    height:auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-color:black;
+    .container-menu{
+      width:100%;
+      .row{
+        .single-tab{
+          .star{
+            .fa-star-o{
+              border-color: #ee232b;
+              color: #333333;
+              background-color: #ee232b;
+              border-style: solid;
+              padding: 20px;
+              text-align: center;
+              display: block;
+              border-radius: 50%;
+              -webkit-border-radius: 50%;
+              margin:0;
+            }
+          }
+          .list{
+            padding:0;
+
+            .cat-name{
+              color:white;
+              margin-bottom: 10px ;
+              font-family: 'Montserrat', sans-serif;
+              margin-top: 15px;
+              &:hover{
+                color:red;
+              }
+            }
+            p{
+              color:white;
+            }
+          }
+        }
+        .left{
+          margin:0;
+          padding:0;
+          .star{
+            float:right;
+            .fa-star-o{
+            }
+          }
+          .list{
+            float:right;
+            text-align: right;
+            .item-name{
+              float:left; text-align: right;
+            }
+            .item-price{
+              float:right; text-align: right; padding:0;
+            }
+          }
+        }
+        .right{
+          margin:0;
+          padding:0;
+          .star{
+            float:left;
+            .fa-star-o{
+              float:left;
+            }
+          }
+          .list{
+            float:left;
+            text-align: left;
+            .item-name{
+              float:left; text-align: left;padding:0;
+            }
+            .item-price{
+              float:left; text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width:1024px){
+  #homepage .thucdon .container-menu .row .single-tab .list{
+    padding: 0 30px;
+  }
+
+}
+@media only screen and (max-width:480px){
+  #homepage .thucdon .container-menu .row .single-tab .list{
+    padding: 0;
+  }
+
+}
+@media only screen and (max-width:767px){
+  #homepage{
+    .thucdon{
+      .container-menu{
+        .row{
+          .single-tab{
+            .star{
+              display:none;
+            }
+
+            .list{
+              .cat-name{
+                text-align:center;
+                margin-bottom:30px;
+              }
+            }
+          }
+          .left{
+            .list{
+              .item-name{
+                float: left;
+                text-align: right;
+                width: 40%;
+                padding:0;
+                padding-right:15px;
+              }
+              .item-price{
+                float: right;
+                text-align: left;
+                padding: 0;
+                padding-left:15px;
+                width: 40%;
+              }
+            }
+          }
+          .right{
+            .list{
+              .item-name{
+                float: left;
+                text-align: right;
+                padding: 0;
+                width: 40%;
+              }
+              .item-price{
+                float: right;
+                width: 40%;
+                text-align: left;
+
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width:480px){
+  #homepage{
+    .thucdon{
+      .container-menu{
+        .row{
+          .single-tab{
+            .star{
+            }
+
+            .list{
+              .cat-name{
+
+              }
+            }
+          }
+          .left{
+            .list{
+              .item-name{
+                width: 50%;
+                padding:0;
+                padding-right:15px;
+              }
+              .item-price{
+                padding: 0;
+                padding-left:15px;
+                width: 50%;
+              }
+            }
+          }
+          .right{
+            .list{
+              .item-name{
+                padding: 0;
+                width: 50%;
+                padding-right:15px;
+              }
+              .item-price{
+                width: 50%;
+                padding:0;
+                padding-left:15px;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

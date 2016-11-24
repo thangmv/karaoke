@@ -25,9 +25,9 @@ header{
           .menu-menu-container{
             ul{
               .current-menu-item{
-                background-image: url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/select.png');
+                /*background-image: url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/select.png');
                 background-repeat: no-repeat;
-                background-position: top center;
+                background-position: top center;*/
                 a{
                   color:#ff8700;
                 }
@@ -138,7 +138,7 @@ header{
           .menu-menu-container{
             ul{
               padding-right:15px;
-              text-align: right;
+              text-align: left;
               margin-top: -17px;
               .current-menu-item{
                 background:none;
@@ -200,5 +200,15 @@ header{
         }
       }
     }
+  }
+}
+@media only screen and (max-width: 475px){
+  header .container .row .main-navigation .navbar-toggle{
+    margin-top:-52px;
+  }
+}
+@media only screen and (max-width: 375px){
+  header .container .row .main-navigation .navbar-toggle{
+    margin-top:-47px;
   }
 }

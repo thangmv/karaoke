@@ -25,7 +25,7 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="container">
 			<div class="row">
-				<div class=" col-xs-8 col-sm-5 logo">
+				<div class=" col-xs-5 logo">
 					<a href="http://x3dev.crystal-techs.com/">
 						<img src="http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/logo-2.png"/>
 					</a>

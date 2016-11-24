@@ -239,9 +239,9 @@ header .container .row .main-navigation {
   padding: 0;
 }
 header .container .row .main-navigation .menu-menu-container ul .current-menu-item {
-  background-image: url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/select.png');
-  background-repeat: no-repeat;
-  background-position: top center;
+  /*background-image: url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/select.png');
+                background-repeat: no-repeat;
+                background-position: top center;*/
 }
 header .container .row .main-navigation .menu-menu-container ul .current-menu-item a {
   color: #ff8700;
@@ -311,7 +311,7 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
   }
   header .container .row .main-navigation .menu-menu-container ul {
     padding-right: 15px;
-    text-align: right;
+    text-align: left;
     margin-top: -17px;
   }
   header .container .row .main-navigation .menu-menu-container ul .current-menu-item {
@@ -351,6 +351,16 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
   }
   header .container .row .main-navigation .menu-menu-container ul li {
     padding: 20px 0;
+  }
+}
+@media only screen and (max-width: 475px) {
+  header .container .row .main-navigation .navbar-toggle {
+    margin-top: -52px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  header .container .row .main-navigation .navbar-toggle {
+    margin-top: -47px;
   }
 }
 /*---------about---------*/
@@ -497,29 +507,14 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
   }
 }
 /*----homepage----*/
-#homepage .row {
-  margin: 0 auto;
-  padding-bottom: 100px;
-}
-#homepage .tab-1 {
+#homepage {
   margin-top: -40px;
 }
-#homepage .tab-1 img {
-  width: 100%;
-  height: 100vh;
-}
-#homepage .tab-about {
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: black;
-}
-#homepage .tab-about .section-title {
+#homepage .section-title {
   margin-bottom: 82px;
   padding-top: 100px;
 }
-#homepage .tab-about .section-title .page-title {
+#homepage .section-title .page-title {
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 0px;
@@ -529,14 +524,14 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
   letter-spacing: -1px;
   color: white !important;
 }
-#homepage .tab-about .section-title .bordertitle {
+#homepage .section-title .bordertitle {
   height: 43px;
   width: 100%;
   margin: 0px auto;
   overflow: hidden;
   position: relative;
 }
-#homepage .tab-about .section-title .bordertitle .borderleft {
+#homepage .section-title .bordertitle .borderleft {
   background-color: #ee232b;
   position: absolute;
   margin-left: 15px;
@@ -546,7 +541,7 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
   height: 1px;
   width: 100px;
 }
-#homepage .tab-about .section-title .bordertitle .bordericon {
+#homepage .section-title .bordertitle .bordericon {
   color: #ee232b;
   width: 30px;
   height: 19px;
@@ -559,7 +554,7 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
   left: 50%;
   display: block;
 }
-#homepage .tab-about .section-title .bordertitle .borderright {
+#homepage .section-title .bordertitle .borderright {
   background-color: #ee232b;
   left: auto;
   right: 50%;
@@ -570,6 +565,21 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
   display: block;
   height: 1px;
   width: 100px;
+}
+#homepage .row {
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+#homepage .tab-1 img {
+  width: 100%;
+  height: 100vh;
+}
+#homepage .tab-about {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
 }
 #homepage .tab-about .main-page .row .info {
   padding-left: 50px;
@@ -626,62 +636,6 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
 #homepage .tab-albumanh {
   height: 100vh;
 }
-#homepage .tab-albumanh .section-title {
-  margin-bottom: 82px;
-  padding-top: 100px;
-}
-#homepage .tab-albumanh .section-title .page-title {
-  font-size: 24px;
-  line-height: 24px;
-  margin-bottom: 0px;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 500;
-  letter-spacing: -1px;
-  color: #333 !important;
-}
-#homepage .tab-albumanh .section-title .bordertitle {
-  height: 43px;
-  width: 100%;
-  margin: 0px auto;
-  overflow: hidden;
-  position: relative;
-}
-#homepage .tab-albumanh .section-title .bordertitle .borderleft {
-  background-color: #ee232b;
-  position: absolute;
-  margin-left: 15px;
-  bottom: 10px;
-  left: 50%;
-  display: block;
-  height: 1px;
-  width: 100px;
-}
-#homepage .tab-albumanh .section-title .bordertitle .bordericon {
-  color: #ee232b;
-  width: 30px;
-  height: 19px;
-  line-height: 19px;
-  font-size: 19px;
-  text-align: center;
-  position: absolute;
-  margin-left: -15px;
-  bottom: 0;
-  left: 50%;
-  display: block;
-}
-#homepage .tab-albumanh .section-title .bordertitle .borderright {
-  background-color: #ee232b;
-  left: auto;
-  right: 50%;
-  margin-right: 15px;
-  position: absolute;
-  margin-left: 15px;
-  bottom: 10px;
-  display: block;
-  height: 1px;
-  width: 100px;
-}
 #homepage .tab-albumanh #album .section-album .single {
   background: black;
   padding: 0;
@@ -701,62 +655,6 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
   background-attachment: fixed;
   background-size: cover;
   background-color: black;
-}
-#homepage .tab-contact .section-title {
-  margin-bottom: 30px;
-  padding-top: 100px;
-}
-#homepage .tab-contact .section-title .page-title {
-  font-size: 24px;
-  line-height: 24px;
-  margin-bottom: 0px;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 500;
-  letter-spacing: -1px;
-  color: #333 !important;
-}
-#homepage .tab-contact .section-title .bordertitle {
-  height: 43px;
-  width: 100%;
-  margin: 0px auto;
-  overflow: hidden;
-  position: relative;
-}
-#homepage .tab-contact .section-title .bordertitle .borderleft {
-  background-color: #ee232b;
-  position: absolute;
-  margin-left: 15px;
-  bottom: 10px;
-  left: 50%;
-  display: block;
-  height: 1px;
-  width: 100px;
-}
-#homepage .tab-contact .section-title .bordertitle .bordericon {
-  color: #ee232b;
-  width: 30px;
-  height: 19px;
-  line-height: 19px;
-  font-size: 19px;
-  text-align: center;
-  position: absolute;
-  margin-left: -15px;
-  bottom: 0;
-  left: 50%;
-  display: block;
-}
-#homepage .tab-contact .section-title .bordertitle .borderright {
-  background-color: #ee232b;
-  left: auto;
-  right: 50%;
-  margin-right: 15px;
-  position: absolute;
-  margin-left: 15px;
-  bottom: 10px;
-  display: block;
-  height: 1px;
-  width: 100px;
 }
 #homepage .tab-contact .container .row iframe {
   margin-bottom: 82px;
@@ -803,5 +701,152 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
   }
   #homepage .tab-1 img {
     height: 400px;
+  }
+}
+/*--thuc don--*/
+#homepage .thucdon {
+  height: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+}
+#homepage .thucdon .container-menu {
+  width: 100%;
+}
+#homepage .thucdon .container-menu .row .single-tab .star .fa-star-o {
+  border-color: #ee232b;
+  color: #333333;
+  background-color: #ee232b;
+  border-style: solid;
+  padding: 20px;
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  margin: 0;
+}
+#homepage .thucdon .container-menu .row .single-tab .list {
+  padding: 0;
+}
+#homepage .thucdon .container-menu .row .single-tab .list .cat-name {
+  color: white;
+  margin-bottom: 10px ;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 15px;
+}
+#homepage .thucdon .container-menu .row .single-tab .list .cat-name:hover {
+  color: red;
+}
+#homepage .thucdon .container-menu .row .single-tab .list p {
+  color: white;
+}
+#homepage .thucdon .container-menu .row .left {
+  margin: 0;
+  padding: 0;
+}
+#homepage .thucdon .container-menu .row .left .star {
+  float: right;
+}
+#homepage .thucdon .container-menu .row .left .list {
+  float: right;
+  text-align: right;
+}
+#homepage .thucdon .container-menu .row .left .list .item-name {
+  float: left;
+  text-align: right;
+}
+#homepage .thucdon .container-menu .row .left .list .item-price {
+  float: right;
+  text-align: right;
+  padding: 0;
+}
+#homepage .thucdon .container-menu .row .right {
+  margin: 0;
+  padding: 0;
+}
+#homepage .thucdon .container-menu .row .right .star {
+  float: left;
+}
+#homepage .thucdon .container-menu .row .right .star .fa-star-o {
+  float: left;
+}
+#homepage .thucdon .container-menu .row .right .list {
+  float: left;
+  text-align: left;
+}
+#homepage .thucdon .container-menu .row .right .list .item-name {
+  float: left;
+  text-align: left;
+  padding: 0;
+}
+#homepage .thucdon .container-menu .row .right .list .item-price {
+  float: left;
+  text-align: left;
+}
+@media only screen and (max-width: 1024px) {
+  #homepage .thucdon .container-menu .row .single-tab .list {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #homepage .thucdon .container-menu .row .single-tab .list {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #homepage .thucdon .container-menu .row .single-tab .star {
+    display: none;
+  }
+  #homepage .thucdon .container-menu .row .single-tab .list .cat-name {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  #homepage .thucdon .container-menu .row .left .list .item-name {
+    float: left;
+    text-align: right;
+    width: 40%;
+    padding: 0;
+    padding-right: 15px;
+  }
+  #homepage .thucdon .container-menu .row .left .list .item-price {
+    float: right;
+    text-align: left;
+    padding: 0;
+    padding-left: 15px;
+    width: 40%;
+  }
+  #homepage .thucdon .container-menu .row .right .list .item-name {
+    float: left;
+    text-align: right;
+    padding: 0;
+    width: 40%;
+  }
+  #homepage .thucdon .container-menu .row .right .list .item-price {
+    float: right;
+    width: 40%;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #homepage .thucdon .container-menu .row .left .list .item-name {
+    width: 50%;
+    padding: 0;
+    padding-right: 15px;
+  }
+  #homepage .thucdon .container-menu .row .left .list .item-price {
+    padding: 0;
+    padding-left: 15px;
+    width: 50%;
+  }
+  #homepage .thucdon .container-menu .row .right .list .item-name {
+    padding: 0;
+    width: 50%;
+    padding-right: 15px;
+  }
+  #homepage .thucdon .container-menu .row .right .list .item-price {
+    width: 50%;
+    padding: 0;
+    padding-left: 15px;
   }
 }
