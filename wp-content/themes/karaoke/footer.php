@@ -17,16 +17,14 @@
 		<div class="container">
 			<div class="footer">
 				<div class="row">
+					<div class="col-md-2"></div>
 					<div class="col-md-4 footer-1">
 						<?php dynamic_sidebar( 'footer-1' ); ?>
 					</div>
 					<div class="col-md-4 footer-2">
 						<?php dynamic_sidebar( 'footer-2' ); ?>
 					</div>
-					<div class="col-md-4 footer-3">
-						<?php dynamic_sidebar( 'footer-3' ); ?>
-						<?php echo do_shortcode('[contact-form-7 id="9" title="Subscrible footer"]') ?>
-					</div>
+					<div class="col-md-2"></div>
 				</div>
 			</div>
 			<div class="copyright">
