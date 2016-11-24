@@ -4,10 +4,10 @@ Template name: Homepage
 */?>
 <?php get_header();?>
 <div id="homepage">
-    <div class="tab-1">
+    <div class="tab-1 tab">
         <img src="http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/slider2.png"/>
     </div>
-    <div class="tab-about" id="about">
+    <div class="tab-about tab" id="about" style=" background-image:url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/anh-mo-2.jpg');">
         <div class="section-title">
             <h1 class="page-title">
                 <span>Giới Thiệu</span>
@@ -42,7 +42,7 @@ Template name: Homepage
             </div>
         </div>
     </div>
-    <div class="tab-3" style=" background-image:url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/bg-test.png');">
+    <div class="tab-3 tab" style=" background-image:url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/anh-mo-2.jpg');">
         <div class="container">
             <div class="row">
                 <div class="icn-container fa fa-quote-left aligncenter type3" style="border-color:#fff;color:#fff;"></div>
@@ -54,10 +54,11 @@ Template name: Homepage
             </div>
         </div>
     </div>
-    <div class="tab-albumanh" id="album-anh">
+    <div class="tab-albumanh tab" id="album-anh">
         <?php
         $pic = new WP_Query([
             'post_type' => 'picture',
+            'posts_per_page'=>4,
         ]);
         ?>
         <div class="section-title">
@@ -84,7 +85,7 @@ Template name: Homepage
             </div>
         </div>
     </div>
-    <div class="tab-contact" id="contact" style=" background-image:url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/contact.jpg');">
+    <div class="tab-contact tab" id="contact" style=" background-image:url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/bg-contact.jpg');">
         <div class="section-title">
             <h1 class="page-title">
                 <span style="color:white;">Liên Hệ</span>
@@ -107,7 +108,7 @@ Template name: Homepage
                     <div class="space"></div>
                 </div>
                 <div class="col-md-6 form">
-                    <?php echo do_shortcode('[contact-form-7 id="8" title="Ý kiến khách hàng"]') ?>
+                    <?php echo do_shortcode('[contact-form-7 id="104" title="Y kien khach hang"]') ?>
                 </div>
 
             </div>

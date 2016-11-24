@@ -235,6 +235,9 @@ header .container {
 header .container .row {
   margin: 0 200px;
 }
+header .container .row .main-navigation {
+  padding: 0;
+}
 header .container .row .main-navigation .menu-menu-container ul .current-menu-item {
   background-image: url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/select.png');
   background-repeat: no-repeat;
@@ -285,48 +288,38 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
     font-size: 14px;
   }
 }
+@media only screen and (min-width: 638px) and (max-width: 730px) {
+  header .container .row .main-navigation .menu-menu-container ul li a {
+    font-size: 11px;
+  }
+}
 @media only screen and (min-width: 638px) {
   .navbar-toggle {
     display: none;
   }
 }
 @media only screen and (max-width: 637px) {
+  header .container .row .logo {
+    padding: 10px 0;
+  }
   header .container .row .main-navigation {
     width: 100%;
+  }
+  header .container .row .main-navigation .navbar-toggle {
+    float: right;
+    margin-top: -62px;
+  }
+  header .container .row .main-navigation .menu-menu-container ul {
+    padding-right: 15px;
+    text-align: right;
+    margin-top: -17px;
   }
   header .container .row .main-navigation .menu-menu-container ul .current-menu-item {
     background: none;
   }
-}
-@media only screen and (max-width: 637px) and (min-width: 576px) {
-  header .container .row .logo {
+  header .container .row .main-navigation .menu-menu-container ul li {
+    padding: 10px 0 !important;
     width: 100%;
-    padding-left: 18%;
-  }
-}
-@media only screen and (max-width: 575px) and (min-width: 550px) {
-  header .container .row .logo {
-    padding-left: 15%;
-  }
-}
-@media only screen and (max-width: 549px) and (min-width: 525px) {
-  header .container .row .logo {
-    padding-left: 13%;
-  }
-}
-@media only screen and (max-width: 524px) and (min-width: 500px) {
-  header .container .row .logo {
-    padding-left: 11%;
-  }
-}
-@media only screen and (max-width: 499px) and (min-width: 475px) {
-  header .container .row .logo {
-    padding-left: 9%;
-  }
-}
-@media only screen and (max-width: 474px) and (min-width: 450px) {
-  header .container .row .logo {
-    padding-left: 7%;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -357,7 +350,7 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
     border-radius: 1px;
   }
   header .container .row .main-navigation .menu-menu-container ul li {
-    padding: 20px 0 0;
+    padding: 20px 0;
   }
 }
 /*---------about---------*/
@@ -516,7 +509,11 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
   height: 100vh;
 }
 #homepage .tab-about {
-  height: auto;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
 }
 #homepage .tab-about .section-title {
   margin-bottom: 82px;
@@ -530,7 +527,7 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
   text-align: center;
   font-weight: 500;
   letter-spacing: -1px;
-  color: #333 !important;
+  color: white !important;
 }
 #homepage .tab-about .section-title .bordertitle {
   height: 43px;
@@ -580,9 +577,11 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
 #homepage .tab-about .main-page .row .info .welcome {
   padding-left: 39px;
   margin-bottom: 18px;
+  color: white;
 }
 #homepage .tab-about .main-page .row .info ul {
   margin: auto;
+  color: white;
 }
 #homepage .tab-3 {
   background-position: 50% 19px;
@@ -591,6 +590,7 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
   padding-bottom: 80px;
   background-size: cover;
   background-repeat: no-repeat;
+  display: none;
 }
 #homepage .tab-3 .container .row .icn-container {
   border-style: solid;
@@ -624,7 +624,7 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
   color: white;
 }
 #homepage .tab-albumanh {
-  height: auto;
+  height: 100vh;
 }
 #homepage .tab-albumanh .section-title {
   margin-bottom: 82px;
@@ -796,4 +796,12 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
 }
 #homepage .tab-contact .container .row .form .ykien .form-field textarea {
   height: 150px;
+}
+@media only screen and (max-width: 767px) {
+  #homepage .tab {
+    height: auto;
+  }
+  #homepage .tab-1 img {
+    height: 400px;
+  }
 }
