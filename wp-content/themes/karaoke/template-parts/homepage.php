@@ -127,7 +127,7 @@ Template name: Homepage
                     <h3>Địa chỉ</h3>
                     <p>KARAOKE X3 - TÔN VINH GIỌNG HÁT VIỆT</p>
                     <p>Địa chỉ: Số nhà 123 - Đường Nguyễn Thái Học - Tổ 16 phường Minh Khai - Tp Hà Giang</p>
-                    <p>Điện thoại: 0929803600</p>
+                    <p>Điện thoại: 0929.803.600</p>
                     <div class="space"></div>
                 </div>
                 <div class="col-md-6 form">
