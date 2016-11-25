@@ -112,7 +112,7 @@ if( !function_exists('karaoke_post_type_pictures') ) {
     function karaoke_post_type_pictures() {
         $args = [
             'labels'        => [
-                'name'      => __( 'Pictures' ),
+                'name'      => __( 'Special Picture' ),
                 'add_new'   => __( 'Add Picture' ),
                 'edit_item' => __( 'Edit Picture' ),
             ],

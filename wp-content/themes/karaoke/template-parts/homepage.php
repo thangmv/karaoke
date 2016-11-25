@@ -5,7 +5,7 @@ Template name: Homepage
 <?php get_header();?>
 <div id="homepage">
     <div class="tab-1 tab">
-        <img src="http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/slider2.png"/>
+        <img src="http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/slider-1-1.jpg"/>
     </div>
     <div class="tab-room tab" id=""room>
         <div class="section-title">
