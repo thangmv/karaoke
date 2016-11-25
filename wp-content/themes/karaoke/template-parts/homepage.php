@@ -37,29 +37,7 @@ Template name: Homepage
             </div>
         </div>
     </div>
-    <div class="tab-room tab" id=""room>
 
-        <div id="room">
-            <div class="section-title">
-                <h1 class="page-title-1">
-                    <span>Đặt phòng</span>
-                </h1>
-                <div class="bordertitle">
-                    <span class="borderleft"></span>
-                    <span class="bordericon fa fa-circle-o"></span>
-                    <span class="borderright"></span>
-                </div>
-                <p><i class="fa fa-star" aria-hidden="true"></i> Vui lòng liên hệ số điện thoại: 092.980.3600 <i class="fa fa-star" aria-hidden="true"></i></p>
-            </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <section class="section-room">
-                        <?php get_template_part('template-parts/room') ?>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="tab-about tab" id="about" style=" background-image:url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/anh-mo-2.jpg');">
         <div class="section-title">
             <h1 class="page-title">
@@ -89,6 +67,29 @@ Template name: Homepage
                         <li>Giá cả hợp lý </li>
                         <li>Luôn lắng nghe ý kiến của bạn</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-room tab" id=""room>
+
+        <div id="room">
+            <div class="section-title">
+                <h1 class="page-title-1">
+                    <span>Đặt phòng</span>
+                </h1>
+                <div class="bordertitle">
+                    <span class="borderleft"></span>
+                    <span class="bordericon fa fa-circle-o"></span>
+                    <span class="borderright"></span>
+                </div>
+                <p><i class="fa fa-star" aria-hidden="true"></i> Vui lòng liên hệ số điện thoại: 092.980.3600 <i class="fa fa-star" aria-hidden="true"></i></p>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <section class="section-room">
+                        <?php get_template_part('template-parts/room') ?>
+                    </section>
                 </div>
             </div>
         </div>
