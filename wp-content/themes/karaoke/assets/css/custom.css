@@ -1,47 +1,67 @@
 .site-footer {
-  background: #6a614f;
-  color: #9d9686;
+  background: #000;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   padding-top: 50px;
 }
 .site-footer .footer {
   border-bottom: 1px solid #9d9686;
 }
-.site-footer .footer .col-md-4 .widget-title {
+.site-footer .footer .col-md-4 .widget-title,
+.site-footer .footer .col-md-3 .widget-title {
   font-size: 22px;
   text-transform: uppercase;
   font-size: 18px;
+  margin-bottom: 20px;
 }
-.site-footer .footer .col-md-4 a {
-  color: #9d9686;
+.site-footer .footer .col-md-4 a,
+.site-footer .footer .col-md-3 a {
+  color: #fff;
   font-weight: 700;
 }
-.site-footer .footer .col-md-4 ul {
+.site-footer .footer .col-md-4 ul,
+.site-footer .footer .col-md-3 ul {
   margin-left: 0;
   padding-left: 0;
 }
-.site-footer .footer .col-md-4 ul li {
+.site-footer .footer .col-md-4 ul li,
+.site-footer .footer .col-md-3 ul li {
   list-style-type: none;
   padding-bottom: 10px;
 }
-.site-footer .footer .col-md-4 ul li .fa {
-  font-size: 24px;
+.site-footer .footer .col-md-4 ul li .fa,
+.site-footer .footer .col-md-3 ul li .fa {
+  font-size: 20px;
   padding-right: 5px;
 }
-.site-footer .footer .col-md-4 .wpcf7-form .wpcf7-email {
+.site-footer .footer .col-md-4 .wpcf7-form .wpcf7-email,
+.site-footer .footer .col-md-3 .wpcf7-form .wpcf7-email {
   width: 70%;
   float: left;
   margin-right: 5px;
   height: 30px;
   border: none;
 }
-.site-footer .footer .col-md-4 .wpcf7-form .wpcf7-submit {
+.site-footer .footer .col-md-4 .wpcf7-form .wpcf7-submit,
+.site-footer .footer .col-md-3 .wpcf7-form .wpcf7-submit {
   height: 30px;
   background: #811000;
   border: none;
   box-shadow: none;
   color: #fff;
   padding-bottom: 10px;
+}
+.site-footer .footer .footer-2 ul li {
+  float: left;
+  margin-right: 7px;
+}
+.site-footer .footer .footer-2 .widget-title {
+  text-align: center;
+}
+.site-footer .footer .footer-2 .textwidget {
+  display: table;
+  margin: 0 auto;
 }
 .site-footer .copyright {
   padding-top: 30px;
@@ -1016,7 +1036,7 @@ header .container .row .main-navigation .menu-thuc-don-container ul li a:hover {
 }
 #room .container-fluid .section-room .tab-content .list-images .single {
   padding: 1px;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
 }
 #room .container-fluid .section-room .tab-content .list-images .single .single-pic {
   position: relative;
@@ -1085,6 +1105,8 @@ header .container .row .main-navigation .menu-thuc-don-container ul li a:hover {
   padding-left: 20px;
 }
 #room .container-fluid .section-room .table-tab ul li.active a {
+  background: #fff;
+  border-radius: 0;
   color: #ee232b;
   border-bottom: 2px solid #ee232b;
   text-decoration: none;

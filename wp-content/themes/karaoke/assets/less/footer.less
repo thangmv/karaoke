@@ -1,17 +1,19 @@
 .site-footer {
-  background: @karaoke_background_color;
-  color: @karaoke_color;
+  background: #000;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
   font-size: @karaoke_font_size;
   padding-top: 50px;
   .footer {
-      .col-md-4 {
+      .col-md-4, .col-md-3 {
       .widget-title {
         font-size: @karaoke_font_size_title;
         text-transform: uppercase;
         font-size: 18px;
+        margin-bottom: 20px;
       }
       a {
-        color: @karaoke_color;
+        color: #fff;
         //text-transform: uppercase;
         font-weight: 700;
       }
@@ -22,7 +24,7 @@
           list-style-type: none;
           padding-bottom: 10px;
           .fa {
-            font-size: 24px;
+            font-size: 20px;
             padding-right: 5px;
           }
         }
@@ -45,7 +47,20 @@
         }
       }
     }
-      border-bottom: 1px solid @karaoke_color;
+    border-bottom: 1px solid @karaoke_color;
+    .footer-2 {
+        ul li {
+          float: left;
+          margin-right: 7px;
+        }
+        .widget-title {
+            text-align: center;
+        }
+      .textwidget {
+        display: table;
+        margin: 0 auto;
+      }
+    }
   }
   .copyright {
       padding-top: 30px;
