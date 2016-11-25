@@ -86,7 +86,7 @@ Template name: Homepage
                 <p><i class="fa fa-star" aria-hidden="true"></i> Vui lòng liên hệ số điện thoại: 092.980.3600 <i class="fa fa-star" aria-hidden="true"></i></p>
             </div>
             <div class="container-fluid">
-                <div class="row">
+                <div class="rows">
                     <section class="section-room">
                         <?php get_template_part('template-parts/room') ?>
                     </section>
