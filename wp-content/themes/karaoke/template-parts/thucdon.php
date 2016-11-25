@@ -1,8 +1,9 @@
 <?php
 /*
 Template name: Menu
-*/?>
-<?php get_header('homepage');?>
+*/
+get_header('thucdon');
+?>
 <div id="homepage">
     <div class="thucdon tab" style="background-image:url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/anh-mo-2.jpg');">
         <div class="section-title">

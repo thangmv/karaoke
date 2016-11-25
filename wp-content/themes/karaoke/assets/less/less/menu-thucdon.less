@@ -1,0 +1,214 @@
+/*--------menu----------*/
+@header-margin:auto;
+body{
+  background: transparent;
+
+}
+.site-content{
+  background:transparent;
+
+}
+header{
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 100;
+  .container{
+    width:100%;
+    .row{
+      margin:0 200px;
+      .logo{
+
+      }
+      .main-navigation{
+        padding:0;
+        .menu-thuc-don-container{
+          ul{
+            .current-menu-item{
+              /*background-image: url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/select.png');
+              background-repeat: no-repeat;
+              background-position: top center;*/
+              a{
+                color:#ff8700;
+              }
+            }
+            li{
+              float: left;
+              margin: 0 32px 0 0;
+              padding: 33px 0 0;
+
+              a{
+                color:white;
+                font-weight: 500;
+                &:hover,&:focus,&:visited{
+                  text-decoration: none;
+                }
+                &:hover{
+                  color:#ff8700;
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1316px){
+  .col-md-1{
+    display:none;
+  }
+  header{
+    .container {
+      .row {
+        margin: 0 auto;
+      }
+    }
+  }
+
+}
+@media only screen and (max-width: 940px) {
+  header{
+    .container{
+      .row{
+        .main-navigation{
+          .menu-thuc-don-container{
+            ul{
+              li{
+                margin: 0 20px 0 0;
+                padding: 33px 0 0;
+
+                a{
+                  font-size:14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 638px) {
+  header{
+    .container{
+      .row{
+        .main-navigation{
+          .menu-thuc-don-container{
+            ul{
+              li{
+                padding: 14px 0 0 0;
+                a{
+                  font-size:14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 638px) and (max-width: 730px) {
+  header .container .row .main-navigation .menu-thuc-don-container ul li a{
+    font-size:11px;
+  }
+}
+
+@media only screen and (min-width: 638px) {
+  .navbar-toggle{
+    display:none;
+  }
+}
+@media only screen and (max-width: 637px) {
+  header{
+    .container{
+      .row{
+        .logo{
+          padding:10px 0;
+        }
+        .main-navigation{
+          width:100%;
+          .navbar-toggle{
+            float:right;
+            margin-top: -62px;
+
+          }
+          .menu-thuc-don-container{
+            ul{
+              padding-right:15px;
+              text-align: left;
+              margin-top: -17px;
+              .current-menu-item{
+                background:none;
+              }
+              li{
+                padding: 10px 0 !important;
+                width:100%;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+}
+
+
+
+@media only screen and (max-width: 767px){
+  .navbar-toggle{
+    position: relative;
+    padding: 9px 0;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow:none;
+    &:focus,&:hover{
+      outline: none !important;
+      box-shadow: none;
+      border-color:transparent;
+    }
+
+    .icon-bar{
+      background-color: white;
+      display: block;
+      margin-bottom: 3px;
+      width: 22px;
+      height: 2px;
+      border-radius: 1px;
+    }
+  }
+  header {
+    .container {
+      .row {
+        .main-navigation {
+          .menu-thuc-don-container {
+            ul {
+              li {
+                padding: 20px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 475px){
+  header .container .row .main-navigation .navbar-toggle{
+    margin-top:-52px;
+  }
+}
+@media only screen and (max-width: 375px){
+  header .container .row .main-navigation .navbar-toggle{
+    margin-top:-47px;
+  }
+}

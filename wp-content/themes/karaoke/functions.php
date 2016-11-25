@@ -46,6 +46,9 @@ function karaoke_setup() {
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'karaoke' ),
 	) );
+    register_nav_menus( array(
+        'thucdon' => esc_html__( 'Thucdon', 'karaoke' ),
+    ) );
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
