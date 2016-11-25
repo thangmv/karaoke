@@ -107,7 +107,7 @@ Template name: Homepage
             </div>
         </div>
     </div>
-    <div class="tab-albumanh tab" id="album-anh">
+    <div class="tab-albumanh tab" id="album-anh" >
         <?php
         $pic = new WP_Query([
             'post_type' => 'picture',

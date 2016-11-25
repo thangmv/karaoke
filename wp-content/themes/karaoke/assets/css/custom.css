@@ -866,11 +866,11 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
   #homepage .thucdon .container-menu .row .left .list .item-name {
     width: 50%;
     padding: 0;
-    padding-right: 15px;
+    padding-left: 15px;
   }
   #homepage .thucdon .container-menu .row .left .list .item-price {
     padding: 0;
-    padding-left: 15px;
+    padding-right: 15px;
     width: 50%;
   }
   #homepage .thucdon .container-menu .row .right .list .item-name {
