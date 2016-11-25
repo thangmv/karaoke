@@ -1009,3 +1009,56 @@ header .container .row .main-navigation .menu-thuc-don-container ul li a:hover {
     margin-top: -47px;
   }
 }
+#room .section-room .tab-content .list-images .single .single-pic {
+  position: relative;
+  overflow: hidden;
+}
+#room .section-room .tab-content .list-images .single .single-pic:hover {
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  cursor: pointer;
+}
+#room .section-room .tab-content .list-images .single .single-pic .image img {
+  width: 100%;
+  height: auto;
+}
+#room .section-room .tab-content .list-images .single .single-pic .zoom {
+  position: absolute;
+  top: -56px;
+  left: 43%;
+  padding: 14px 16.4px;
+  background: #212121;
+  border-radius: 50%;
+  -webkit-transition: top 0.8s;
+  /* For Safari 3.1 to 6.0 */
+  transition: top 0.8s;
+}
+#room .section-room .tab-content .list-images .single .single-pic .zoom a {
+  color: #fff;
+}
+#room .section-room .tab-content .list-images .single .single-pic .zoom a i {
+  font-size: 24px;
+}
+#room .section-room .tab-content .list-images .single .single-pic .info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  -webkit-transition: height 0.8s;
+  /* For Safari 3.1 to 6.0 */
+  transition: height 0.8s;
+  height: 0;
+}
+#room .section-room .tab-content .list-images .single .single-pic .info .info-2 {
+  background-color: #212121;
+  color: #fff;
+}
+#room .section-room .tab-content .list-images .single .single-pic .info .info-2 .name {
+  padding: 6px 0;
+  text-align: center;
+}
+#room .section-room .tab-content .list-images .single .single-pic .info .info-2 .capacity {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
