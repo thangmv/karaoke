@@ -12,7 +12,7 @@ $pic = new WP_Query([
     <div class="gallery-page tab-albumanh tab" id="album-anh" style="background-image:url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/anh-mo-2.jpg');">
         <div class="section-title">
             <h1 class="page-title">
-                <span>Menu</span>
+                <span>Album Ảnh</span>
             </h1>
             <div class="bordertitle">
                 <span class="borderleft"></span>
