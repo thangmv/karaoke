@@ -100,7 +100,7 @@ if( !function_exists('karaoke_post_type_rooms') ) {
             'rewrite' => array('slug' => 'rooms'),
             'has_archive' => true,
             'menu_icon' => 'dashicons-cart',
-            'supports' => ['title', 'thumbnail','editor'],
+            'supports' => ['title', 'thumbnail','editor', 'post-formats'],
         ];
 
         register_post_type('room', $args);
@@ -117,7 +117,7 @@ if( !function_exists('karaoke_post_type_pictures') ) {
                 'edit_item' => __( 'Edit Picture' ),
             ],
             'public' => true,
-            'rewrite' => array('slug' => 'rooms'),
+            'rewrite' => array('slug' => 'pictures'),
             'has_archive' => true,
             'menu_icon' => 'dashicons-cart',
             'supports' => ['title', 'thumbnail','editor','custom-fields'],
@@ -178,5 +178,50 @@ function cd_meta_box_save( $post_id )
         update_post_meta( $post_id, 'price', $_POST['price'] );
 
 }
+
+function rename_post_formats( $safe_text ) {
+    if ( $safe_text == 'Aside' ){
+        return 'Phòng nhỏ';
+    } elseif ($safe_text == 'Image') {
+        return 'Phòng trung';
+    } elseif ($safe_text == 'Video') {
+        return 'Phòng lớn';
+    } elseif ($safe_text == 'Quote') {
+        return 'Phòng VIP';
+    }
+
+
+    return $safe_text;
+}
+add_filter( 'esc_html', 'rename_post_formats' );
+
+//rename Aside in posts list table
+function live_rename_formats() {
+    global $current_screen;
+
+    if ( $current_screen->id == 'edit-post' ) { ?>
+        <script type="text/javascript">
+            jQuery('document').ready(function() {
+
+                jQuery("span.post-state-format").each(function() {
+                    if ( jQuery(this).text() == "Aside" ) {
+                        jQuery(this).text("Phòng nhỏ");
+                    } else if ( jQuery(this).text() == "Image" ) {
+                        jQuery(this).text("Phòng trung");
+                    } else if ( jQuery(this).text() == "Video" ) {
+                        jQuery(this).text("Phòng lớn");
+                    } else if ( jQuery(this).text() == "Quote" ) {
+                        jQuery(this).text("Phòng VIP");
+                    }
+
+                });
+
+            });
+        </script>
+    <?php }
+}
+add_action('admin_head', 'live_rename_formats');
+
+
 
 

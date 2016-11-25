@@ -67,10 +67,7 @@ function karaoke_setup() {
 		'aside',
 		'image',
 		'video',
-		'quote',
-		'link',
-		'gallery',
-		'audio'
+		'quote'
 	) );
 
 	// Set up the WordPress core custom background feature.

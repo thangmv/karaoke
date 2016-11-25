@@ -7,6 +7,28 @@ Template name: Homepage
     <div class="tab-1 tab">
         <img src="http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/slider2.png"/>
     </div>
+    <div class="tab-room tab" id=""room>
+        <div class="section-title">
+            <h1 class="page-title">
+                <span>Đặt phòng</span>
+            </h1>
+            <div class="bordertitle">
+                <span class="borderleft"></span>
+                <span class="bordericon fa fa-circle-o"></span>
+                <span class="borderright"></span>
+            </div>
+
+        </div>
+        <div id="room">
+            <div class="container-fluid">
+                <div class="row">
+                    <section class="section-room">
+                        <?php get_template_part('template-parts/room') ?>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="tab-about tab" id="about" style=" background-image:url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/anh-mo-2.jpg');">
         <div class="section-title">
             <h1 class="page-title">
@@ -83,6 +105,7 @@ Template name: Homepage
             </div>
         </div>
     </div>
+
     <div class="tab-contact tab" id="contact" style=" background-image:url('http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/bg-contact.jpg');">
         <div class="section-title">
             <h1 class="page-title">
