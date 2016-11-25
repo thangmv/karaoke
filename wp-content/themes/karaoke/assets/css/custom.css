@@ -807,15 +807,15 @@ header .container .row .main-navigation .menu-menu-container ul li a:hover {
     margin-bottom: 30px;
   }
   #homepage .thucdon .container-menu .row .left .list .item-name {
-    float: left;
-    text-align: right;
+    float: right;
+    text-align: left;
     width: 40%;
     padding: 0;
     padding-right: 15px;
   }
   #homepage .thucdon .container-menu .row .left .list .item-price {
-    float: right;
-    text-align: left;
+    float: left;
+    text-align: right;
     padding: 0;
     padding-left: 15px;
     width: 40%;

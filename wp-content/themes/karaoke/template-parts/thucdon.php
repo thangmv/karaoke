@@ -26,20 +26,7 @@ get_header('thucdon');
                         </div>
                         <div class="list col-md-10 col-xs-12">
                             <h4 class="cat-name">Rượu</h4>
-                            <div class="item-name col-md-9">
-                                <p>Chivas 21 </p>
-                                <p>Chivas 12</p>
-                                <p>Johnny Walker Gold</p>
-                                <p>Johnny Walker Black</p>
-                                <p>Johnny Walker Red</p>
-                                <p>Ballantines 21</p>
-                                <p>Ballantines 17</p>
-                                <p>Ballantines</p>
-                                <p>Vodka Men</p>
-                                <p>Rượu ngô</p>
-                            </div>
-                            <div class="item-price col-md-3">
-
+                            <div class="item-name col-md-6">
                                 <p>Liên hệ </p>
                                 <p>Liên hệ </p>
                                 <p>Liên hệ </p>
@@ -50,6 +37,19 @@ get_header('thucdon');
                                 <p>Liên hệ </p>
                                 <p>100.000đ</p>
                                 <p>70.000đ</p>
+                            </div>
+                            <div class="item-price col-md-6">
+                                <p>Chivas 21 </p>
+                                <p>Chivas 12</p>
+                                <p>Johnny Walker Gold</p>
+                                <p>Johnny Walker Black</p>
+                                <p>Johnny Walker Red</p>
+                                <p>Ballantines 21</p>
+                                <p>Ballantines 17</p>
+                                <p>Ballantines</p>
+                                <p>Vodka Men</p>
+                                <p>Rượu ngô</p>
+
                              </div>
                         </div>
                     </div>
@@ -59,17 +59,18 @@ get_header('thucdon');
                         </div>
                         <div class="list col-md-10 col-xs-12">
                             <h4 class="cat-name">Bia</h4>
-                            <div class="item-name col-md-9">
-                                <p>Heineken</p>
-                                <p>Tiger Bạc</p>
-                                <p>Tiger Xanh</p>
-                                <p>Tiger Xanh</p>
-                            </div>
-                            <div class="item-price col-md-3">
+                            <div class="item-name col-md-6">
                                 <p>25.000đ</p>
                                 <p>22.000đ</p>
                                 <p>21.000đ</p>
                                 <p>21.000đ</p>
+                            </div>
+                            <div class="item-price col-md-6">
+
+                                <p>Heineken</p>
+                                <p>Tiger Bạc</p>
+                                <p>Tiger Xanh</p>
+                                <p>Tiger Xanh</p>
                             </div>
 
                         </div>
