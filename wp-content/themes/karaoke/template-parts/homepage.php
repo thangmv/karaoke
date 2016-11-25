@@ -29,14 +29,12 @@ Template name: Homepage
                         Chào mừng đến với X3 Karaoke
                     </h3>
                     <ul>
-                        <li>gioi thieu </li>
-                        <li>gioi thieu </li>
-                        <li>gioi thieu </li>
-                        <li>gioi thieu </li>
-                        <li>gioi thieu </li>
-                        <li>gioi thieu </li>
-                        <li>gioi thieu </li>
-
+                        <li>Trang thiết bị âm thanh hiện đại</li>
+                        <li>Phần mềm Karaoke mới nhất, cập nhật bài hát liên tục</li>
+                        <li>Nội thất sang trọng</li>
+                        <li>Cam kết mang đến cho bạn những trải nghiệm tuyệt vời nhất </li>
+                        <li>Giá cả hợp lý </li>
+                        <li>Luôn lắng nghe ý kiến của bạn</li>
                     </ul>
                 </div>
             </div>
@@ -63,7 +61,7 @@ Template name: Homepage
         ?>
         <div class="section-title">
             <h1 class="page-title">
-                <span>Album ảnh</span>
+                <span style="color:black;">Album ảnh</span>
             </h1>
             <div class="bordertitle">
                 <span class="borderleft"></span>
