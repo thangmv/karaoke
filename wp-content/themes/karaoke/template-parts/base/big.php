@@ -18,10 +18,31 @@ $args = array(
 $query = new WP_Query($args);
 ?>
 
-<div class="row">
-    <?php if( $query->have_posts()) : while( $query->have_posts() ) : $query->the_post(); ?>
+<div class="list-images rows">
+    <?php if( $query->have_posts()) : while( $query->have_posts() ) : $query->the_post();
+        $capacity = get_post_meta($post->ID, 'capacity', true);
+        $price = get_post_meta($post->ID, 'price', true);
+        ?>
         <div class="single col-md-3 col-xs-12">
-            <?php the_post_thumbnail() ?>
+            <div class="single-pic">
+                <div class="image">
+                    <?php the_post_thumbnail() ?>
+                </div>
+                <div class="zoom">
+                    <a class="fancybox" rel="group" href="<?php the_post_thumbnail_url();?>"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                </div>
+                <div class="info">
+                    <div class="info-2">
+                        <div class="name">
+                            <?php the_title() ?>
+                        </div>
+                        <div class="capacity">
+                            <?php echo $price .'VNĐ/giờ, ' .$capacity.' người'?>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
 
     <?php endwhile; endif; ?>
