@@ -1,60 +1,143 @@
 #room {
-  .section-room {
+  .container-fluid {
+      padding: 0;
+      .section-room {
       .tab-content {
-          .list-images {
-              .single {
-                  .single-pic {
-                      position: relative;
-                      overflow: hidden;
-                      &:hover {
-                        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-                        filter: grayscale(100%);
-                        cursor: pointer;
-                      }
-                      .image {
-                          img {
-                              width: 100%;
-                              height: auto;
-                          }
-                      }
-                      .zoom {
-                          position: absolute;
-                          top:-56px;
-                          left: 43%;
-                          padding: 14px 16.4px;
-                          background: #212121;
-                          border-radius: 50%;
-                          -webkit-transition: top 0.8s; /* For Safari 3.1 to 6.0 */
-                          transition: top 0.8s;
-                          a {
-                              color: #fff;
-                              i {
-                                font-size: 24px;
-                              }
-                          }
-                      }
-                          .info {
-                              position: absolute;
-                              bottom: 0;
-                              width: 100%;
-                              -webkit-transition: height 0.8s; /* For Safari 3.1 to 6.0 */
-                              transition: height 0.8s;
-                              height: 0;
-                              .info-2 {
-                                  background-color: #212121;
-                                  color: #fff;
-                                  .name {
-                                      padding: 6px 0;
-                                      text-align: center;
-                                  }
-                                  .capacity {
-                                      text-align: center;
-                                      padding-top: 5px;
-                                      padding-bottom: 10px;
-                                  }
-                              }
-                      }
+        .list-images {
+          .single {
+            padding: 1px;
+            margin-bottom: 20px;
+            .single-pic {
+              position: relative;
+              overflow: hidden;
+              &:hover {
+                -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                filter: grayscale(100%);
+                cursor: pointer;
+              }
+              .image {
+                img {
+                  width: 100%;
+                  height: auto;
+                }
+              }
+              .zoom {
+                position: absolute;
+                top:-56px;
+                left: 43%;
+                padding: 14px 16.4px;
+                background: #212121;
+                border-radius: 50%;
+                -webkit-transition: top 0.8s; /* For Safari 3.1 to 6.0 */
+                transition: top 0.8s;
+                a {
+                  color: #fff;
+                  i {
+                    font-size: 24px;
                   }
+                }
+              }
+              .info {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                -webkit-transition: height 0.8s; /* For Safari 3.1 to 6.0 */
+                transition: height 0.8s;
+                height: 0;
+                .info-2 {
+                  background-color: #212121;
+                  color: #fff;
+                  .name {
+                    //padding: 6px 0;
+                    text-align: center;
+                    font-weight: 600;
+                  }
+                  .capacity {
+                    text-align: center;
+                    padding-top: 5px;
+                    padding-bottom: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .table-tab {
+        display: table;
+        margin: 0 auto;
+        ul {
+          text-align: center;
+          padding-bottom: 40px;
+          margin-left: 0;
+          li {
+            float: left;
+            padding-left: 20px;
+            &.active {
+              a {
+                color: #ee232b;
+                border-bottom: 2px solid #ee232b;
+                text-decoration: none;
+                &:hover {
+                  text-decoration: none;
+                }
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+              }
+            }
+            a {
+              padding: 5px;
+              font-weight: 600;
+              color: #333;
+              font-size: 14px;
+              text-transform: uppercase;
+              font-family: 'Montserrat', sans-serif;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.tab-room {
+    .section-title {
+        .page-title-1 {
+            font-size: 24px;
+            line-height: 24px;
+            margin-bottom: 0px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 500;
+            letter-spacing: -1px;
+            color: #000 !important;
+        }
+        p {
+            text-align: center;
+            padding-top: 10px;
+        }
+    }
+}
+
+// Responsive
+@media(max-width: 1200px) and (min-width: 992px) {
+  #room {
+      .single-pic {
+          .zoom {
+              padding: 6px 8.4px !important;
+          }
+          .info {
+              .name {
+                  padding: 0;
+                  font-size: 14px;
+                  font-weight: 600;
+              }
+              .capacity {
+                  padding-bottom: 5px;
+                  font-size: 14px;
               }
           }
       }

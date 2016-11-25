@@ -23,10 +23,10 @@ $query = new WP_Query($args);
         $capacity = get_post_meta($post->ID, 'capacity', true);
         $price = get_post_meta($post->ID, 'price', true);
         ?>
-        <div class="single col-md-3 col-xs-12">
+        <div class="single col-lg-3 col-md-6 col-xs-12">
             <div class="single-pic">
                 <div class="image">
-                    <?php the_post_thumbnail() ?>
+                    <?php the_post_thumbnail(array('340','340')) ?>
                 </div>
                 <div class="zoom">
                     <a class="fancybox" rel="group" href="<?php the_post_thumbnail_url();?>"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
@@ -37,7 +37,7 @@ $query = new WP_Query($args);
                             <?php the_title() ?>
                         </div>
                         <div class="capacity">
-                            <?php echo $price .'VNĐ/giờ, ' .$capacity.' người'?>
+                            <?php echo $price .' VNĐ/giờ, ' .$capacity.' người'?>
                         </div>
 
                     </div>

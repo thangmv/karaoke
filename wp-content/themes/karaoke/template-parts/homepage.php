@@ -9,7 +9,7 @@ Template name: Homepage
     </div>
     <div class="tab-room tab" id=""room>
         <div class="section-title">
-            <h1 class="page-title">
+            <h1 class="page-title-1">
                 <span>Đặt phòng</span>
             </h1>
             <div class="bordertitle">
@@ -17,7 +17,7 @@ Template name: Homepage
                 <span class="bordericon fa fa-circle-o"></span>
                 <span class="borderright"></span>
             </div>
-
+            <p><i class="fa fa-star" aria-hidden="true"></i> Liên hệ số điện thoại: (092)-9803600 <i class="fa fa-star" aria-hidden="true"></i></p>
         </div>
         <div id="room">
             <div class="container-fluid">

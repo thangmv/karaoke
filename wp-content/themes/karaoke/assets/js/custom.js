@@ -12,7 +12,7 @@ jQuery(function ($) {
     $(document).ready(function() {
         $(pic).mouseover(function() {
             $(this).find('.zoom').css('top','28%');
-            $(this).find('.info').css('height','75px');
+            $(this).find('.info').css('height','57px');
         });
         $(pic).mouseout(function() {
             $(this).find('.info').css('height','0');
