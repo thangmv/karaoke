@@ -11,6 +11,8 @@ Template name: Homepage
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2  "></li>
+
                 </ol>
 
                 <!-- Wrapper for slides -->
@@ -20,9 +22,11 @@ Template name: Homepage
                     </div>
 
                     <div class="item">
-                        <img src="http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/about.jpg" alt="Chania" >
+                        <img src="http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/pexels-photo-144429.jpeg" alt="Chania" >
                     </div>
-
+                    <div class="item">
+                        <img src="http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/pexels-photo-110472.jpeg" alt="Chania" >
+                    </div>
                 </div>
 
                 <!-- Left and right controls -->
@@ -156,7 +160,6 @@ Template name: Homepage
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2600.2328230478847!2d104.98602026759691!3d22.828960627120605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x36cc79b5327ec091%3A0x90963af63a51431a!2zMTIzIE5ndXnDqsyDbiBUaGHMgWkgSG_Mo2MsIFRy4bqnbiBQaMO6LCB0cC4gSMOgIEdpYW5nLCBIw6AgR2lhbmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1479717769460" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 
                 <div class="col-md-6 add">
-                    <h3>Địa chỉ</h3>
                     <p>KARAOKE X3 - TÔN VINH GIỌNG HÁT VIỆT</p>
                     <p>Địa chỉ: Số nhà 123 - Đường Nguyễn Thái Học - Tổ 16 phường Minh Khai - Tp Hà Giang</p>
                     <p>Điện thoại: 0929.803.600</p>
