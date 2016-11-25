@@ -11,7 +11,6 @@ Template name: Homepage
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2  "></li>
 
                 </ol>
 
@@ -24,9 +23,7 @@ Template name: Homepage
                     <div class="item">
                         <img src="http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/pexels-photo-144429.jpeg" alt="Chania" >
                     </div>
-                    <div class="item">
-                        <img src="http://x3dev.crystal-techs.com/wp-content/uploads/2016/11/pexels-photo-110472.jpeg" alt="Chania" >
-                    </div>
+
                 </div>
 
                 <!-- Left and right controls -->
