@@ -128,6 +128,25 @@ if( !function_exists('karaoke_post_type_pictures') ) {
 
     add_action('init', 'karaoke_post_type_pictures');
 }
+if( !function_exists('karaoke_post_type_single_pictures') ) {
+    function karaoke_post_type_single_pictures() {
+        $args = [
+            'labels'        => [
+                'name'      => __( 'Single Picture' ),
+                'add_new'   => __( 'Add Single Picture' ),
+                'edit_item' => __( 'Edit Single Picture' ),
+            ],
+            'public' => true,
+            'rewrite' => array('slug' => 'singlepic'),
+            'has_archive' => true,
+            'supports' => ['title', 'thumbnail','editor','custom-fields'],
+        ];
+
+        register_post_type('single_picture', $args);
+    }
+
+    add_action('init', 'karaoke_post_type_single_pictures');
+}
 
 add_action( 'add_meta_boxes','add_room_metaboxes' );
 function add_room_metaboxes() {
