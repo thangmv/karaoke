@@ -102,6 +102,7 @@ Template name: Homepage
                     }
                     ?>
                 </section>
+
             </div>
         </div>
     </div>
@@ -125,7 +126,8 @@ Template name: Homepage
                 <div class="col-md-6 add">
                     <h3>Địa chỉ</h3>
                     <p>KARAOKE X3 - TÔN VINH GIỌNG HÁT VIỆT</p>
-                    <p>Số nhà 123 - Đường Nguyễn Thái Học - Tổ 16 phường Minh Khai - Tp Hà Giang</p>
+                    <p>Địa chỉ: Số nhà 123 - Đường Nguyễn Thái Học - Tổ 16 phường Minh Khai - Tp Hà Giang</p>
+                    <p>Điện thoại: 0929803600</p>
                     <div class="space"></div>
                 </div>
                 <div class="col-md-6 form">
