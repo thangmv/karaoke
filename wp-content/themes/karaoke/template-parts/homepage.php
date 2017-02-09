@@ -75,6 +75,11 @@ Template name: Homepage
     <div class="tab-room tab" id=""room>
 
         <div id="room">
+            <style>
+                .fancybox-outer a{
+                    display: none;;
+                }
+            </style>
             <div class="section-title">
                 <h1 class="page-title-1">
                     <span>Đặt phòng</span>
@@ -84,7 +89,7 @@ Template name: Homepage
                     <span class="bordericon fa fa-circle-o"></span>
                     <span class="borderright"></span>
                 </div>
-                <p><i class="fa fa-star" aria-hidden="true"></i> Vui lòng liên hệ số điện thoại: 092.980.3600 <i class="fa fa-star" aria-hidden="true"></i></p>
+                <p><i class="fa fa-star" aria-hidden="true"></i> Vui lòng liên hệ số điện thoại: 0962.338.338 <i class="fa fa-star" aria-hidden="true"></i></p>
             </div>
             <div class="container-fluid">
                 <div class="rows">
@@ -159,7 +164,7 @@ Template name: Homepage
                 <div class="col-md-6 add">
                     <p>KARAOKE X3 - TÔN VINH GIỌNG HÁT VIỆT</p>
                     <p>Địa chỉ: Số nhà 123 - Đường Nguyễn Thái Học - Tổ 16 phường Minh Khai - Tp Hà Giang</p>
-                    <p>Điện thoại: 092.980.3600</p>
+                    <p>Điện thoại: 0962.338.338</p>
                     <div class="space"></div>
                 </div>
                 <div class="col-md-6 form">
